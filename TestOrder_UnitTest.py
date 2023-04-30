@@ -48,6 +48,9 @@ class TestOrder(unittest.TestCase):
          order_label = browser.find_element(By.CSS_SELECTOR, "#crm-med-center-orders > div > div:nth-child(1) > h1")
          order_text=order_label.text
          self.assertEqual(order_text,"Замовлення","Замовлення")
+
+
+         
     def test_order_fail(self):
          link = "https://dev7-analizi-mis.bizonoff-dev.net/"
          browser = webdriver.Chrome()
