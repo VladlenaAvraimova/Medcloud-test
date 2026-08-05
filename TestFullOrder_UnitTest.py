@@ -16,7 +16,7 @@ class TestResult(unittest.TestCase):
          inputlog.send_keys("test@mail.fake")
          inputpass = browser.find_element(By.ID, "input-el-3")
          inputpass.click()
-         inputpass.send_keys("2Devel0New1Pass7")
+         inputpass.send_keys("")
          buttonlog = browser.find_element(By.ID, "button-el-4")
          buttonlog.click()
          time.sleep(1)
